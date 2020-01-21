@@ -1,0 +1,91 @@
+@import './vars.less';
+
+.padding-sm {
+    padding: @padding-sm;
+}
+
+.padding-md {
+    padding: @padding-md;
+}
+
+.padding-right-sm {
+    padding-right: @padding-sm;
+}
+
+.margin-bottom-sm {
+    margin-bottom: @padding-sm;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex {
+    flex: 1;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.overflow-y-auto {
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: background-color .3s;
+    &:hover, &:focus-within {
+        background-color: rgba(0,0,0,0.18);
+    }
+}
+
+.marginRight-sm {
+    margin-right: @padding-sm;
+}
+
+.pointer-events-none {
+    pointer-events: none;
+}
+
+.post-width {
+    width: 536px;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.item-padding-vertical > *:not(:last-child) {
+    padding-bottom: @padding-sm;
+}
+
+.item-padding-horizontal *:not(:last-child) {
+    padding-right: @padding-sm;
+}
+
+*::-webkit-scrollbar {
+    background-color: white;
+    width: 6px;
+  }
+
+*::-webkit-scrollbar-track {
+    display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: inherit;
+    border-radius: @border-radius-base;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: @primary-color;
+}
+
+*::-webkit-scrollbar-button {
+display: none;
+}
+  

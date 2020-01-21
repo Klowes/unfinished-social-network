@@ -1,0 +1,15 @@
+{
+  "name": "bitbook-webtorrent-ext",
+  "version": "0.0.1",
+  "description": "Enables Bitbook friend extensions to the webtorrent bittorrent-protocol.",
+  "main": "index.js",
+  "author": "Zach Wymer",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5"
+  },
+  "scripts": {
+    "build": "yarn babel index.js --out-file ./index.compiled.js && yarn pack"
+  }
+}

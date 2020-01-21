@@ -1,0 +1,33 @@
+@import './vars.less';
+
+.ant-card {
+    border-radius: @border-radius-base !important;
+}
+
+.ant-upload-list-item-actions {
+    .anticon:hover {
+        color: @primary-color !important;
+    }
+}
+
+.ant-modal {
+    max-height: calc(100% - 100px);
+    display: flex;
+}
+
+.ant-modal-content {
+    flex: 1;
+    display: flex;
+}
+
+.quill {
+    &.noPadding {
+        .ql-editor {
+            padding: 0px;
+        }
+    }
+}
+
+.ql-blank::before {
+    font-style: unset !important;
+}
